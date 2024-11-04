@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор Украинских Номеров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор Украинских Номеров</h1>
+        
+        <div class="form-group">
+            <label for="operator">Выберите оператора:</label>
+            <select id="operator">
+                <option value="Kyivstar">Kyivstar</option>
+                <option value="Vodafone">Vodafone</option>
+                <option value="Lifecell">Lifecell</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="quantity">Количество номеров:</label>
+            <input type="number" id="quantity" min="10" max="1000" value="10">
+        </div>
+        
+        <button id="generateButton">Генерировать</button>
+        <div id="spinner" class="spinner hidden"></div>
+        
+        <div id="numberList" class="number-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
